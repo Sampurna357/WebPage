@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Progress Card</title>
+        <link rel="stylesheet" href="page.css">
+    </head>
+    <body>
+        <div class="head">STUDENT PROGRESS CARD GENERATOR</div>
+         <ul class="main">
+            
+            <li>
+                <label for="Sname">Enter Student Name:</label>
+                <input type="text" id="name" name="Sname" />
+            </li>
+            <li>
+                <label for="Sage">Enter Student Age:</label>
+                <input type="text" id="age" name="Sage" />
+            </li>
+            <li>
+                <label for="Sgender">Gender:</label>
+                <input type="radio" class="gender" value="Male" id="gender1" name="Sgender" />Male
+                <input type="radio"  vlaue="Female" class="gender"id="gender2" name="Sgender" />Female
+
+            </li>
+            <li>
+                <label for="Sclass">Class:</label>
+                <select name="Sclass" id="class">
+                <option id="c1">Class I</option>
+                <option id="c2">Class II</option>
+                <option id="c3">Class III</option>
+                <option id="c4">Class IV</option>
+                <option id="c5">Class V</option>
+                <option id="c6">Class VI</option>
+                <option id="c7">Class VII</option>
+                <option id="c8">Class VIII</option>
+                <option id="c9">Class IX</option>
+                <option id="c10">Class X</option>
+                </select>
+            </li>
+            <li>
+                <label for="Smarks" >Marks:</label>
+                <input type="text" name="Smarks" class="mark" id="mark1"/>
+                <input type="text" name="Smarks" class="mark" id="mark2"/>
+                <input type="text" name="Smarks" class="mark" id="mark3"/>
+                <input type="text" name="Smarks" class="mark" id="mark4"/>
+                <input type="text" name="Smarks" class="mark" id="mark5"/>
+                <input type="text" name="Smarks" class="mark" id="mark6"/>
+
+            </li>
+            
+         </ul>
+         <div class="footer">
+            <input type="button" value="Gnerate Progress Card" class="btn" onclick="generator();"/>
+         </div>
+       
+         <div class="pageGenerator"></div>
+         <script src="app.js">
+           
+         </script>
+    </body>
+</html>
